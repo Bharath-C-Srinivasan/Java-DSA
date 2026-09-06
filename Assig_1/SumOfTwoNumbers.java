@@ -1,6 +1,7 @@
 // Print the Sum of Two Numbers
 /* This program uses a Scanner to read two integers and outputs their sum. */
 
+package Assig_1;
 import java.util.Scanner;
 
 public class SumOfTwoNumbers {

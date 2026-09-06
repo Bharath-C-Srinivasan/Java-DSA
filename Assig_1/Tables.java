@@ -4,6 +4,7 @@ This program uses a for loop to iterate from 1 to 10, multiplying the input numb
 counter variable at each step.
 */
 
+package Assig_1;
 import java.util.Scanner;
 
 public class Tables {

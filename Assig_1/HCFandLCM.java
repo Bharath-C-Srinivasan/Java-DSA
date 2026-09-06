@@ -6,6 +6,7 @@ calculates the Least Common Multiple (LCM) using the formula:
 LCM = (Number1 * Number2) / HCF
 */
 
+package Assig_1;
 import java.util.Scanner;
 
 public class HCFandLCM {

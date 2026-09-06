@@ -4,6 +4,7 @@ A year is a leap year if it is divisible by 4. However, century years (like 1900
 divisible by 400 to be considered a leap year.
 */
 
+package Assig_1;
 import java.util.Scanner;
 
 public class LeapYearCheck {

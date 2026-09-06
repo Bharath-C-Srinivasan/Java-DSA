@@ -4,6 +4,7 @@ This program reads the input as a String so it can check for the character 'x'. 
 valid number, it parses it into an integer and adds it to the running total.
 */
 
+package Assig_1;
 import java.util.Scanner;
 
 public class SumuntilX {
