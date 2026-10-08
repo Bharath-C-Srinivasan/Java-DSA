@@ -1,0 +1,52 @@
+//142. Linked List Cycle II
+/*Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
+
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously 
+following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is 
+connected to (0-indexed). It is -1 if there is no cycle. Note that pos is not passed as a parameter.
+
+Do not modify the linked list. */
+
+package Linkedlist;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class LC142 {
+    public ListNode detectCycle(ListNode head) {
+        Set <ListNode> set = new HashSet<>();
+        ListNode curr = head;
+        while(curr != null){
+            if(set.contains(curr)){
+                return curr;
+            }
+            set.add(curr);
+            curr = curr.next;
+        }
+        return null;
+    }
+
+    public ListNode detectCycleOptimized(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while(fast != null && fast.next != null){
+            fast = fast.next.next;
+            slow = slow.next;
+            if(fast == slow){
+                break;
+            }
+        }
+
+        if(fast == null || fast.next == null){
+            return null;
+        }
+
+        ListNode curr = head;
+        while(curr != slow){
+            curr = curr.next;
+            slow = slow.next;
+        }
+        return curr;
+    }
+}
