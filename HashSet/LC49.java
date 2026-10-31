@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class LC49 {
     public List<List<String>> groupAnagrams(String[] strs) {
-        Map <String,List<String>> map = map = new HashMap<>();
+        Map <String,List<String>> map = new HashMap<>();
         List <List<String>> ls = new ArrayList <List<String>>();
 
         for(String str: strs){
